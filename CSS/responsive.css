@@ -1,0 +1,153 @@
+/* responsive.css (Eric Gregor) */
+
+/* mobile responsive */
+
+@media only screen and (max-width: 600px) {
+	.hidden-mobile {
+		display: none;
+	}
+	
+	.flex-col-mobile {
+		flex-direction: column;
+	}
+
+	/* header */
+
+	.header-mobile {
+		padding: 0 1rem 0 1rem;
+	}
+
+	/* logo and shopping cart */
+
+	.logo-mobile img {
+		height: 5vh;
+	}
+
+	.cart-mobile img {
+		height: 5vh;
+	}
+
+	/* top navigation, change menu items from horizontal to vertical */
+
+	.nav-mobile {
+		list-style-type: none;
+		display: block;
+		align-self: left;
+		padding: 0;
+		justify-content: left;
+		font-size: 1rem;
+	}
+
+	/* banner */
+
+	.banner-mobile {
+		height: 40vh;
+	}
+
+	.banner-mobile h3 {
+		font-size: 1rem;
+		padding: 0.5rem;
+	}
+
+	.banner-mobile p {
+		font-size: 2.25rem;
+		padding: 0.5rem;
+	}
+
+	/* call to action (cta) */
+
+	.cta-mobile {
+		line-height: 1.5rem;
+		justify-content: space-around;
+		padding: 3rem 0 3rem 0;
+	}
+
+	.cta-mobile h2 {
+		font-size: 2rem;
+	}
+
+	.cta-mobile h5 {
+		width: 90%;
+		font-size: 0.85rem;
+		padding: 2rem 0 0 0;
+	}
+
+	/* products */
+
+	.products-hdg-mobile {
+		text-align: center;
+		line-height: 1.5rem;
+		padding: 2rem 0 2rem 0;
+	}
+
+	.products-hdg-mobile h2 {
+		font-size: 2rem;
+	}
+
+	.products-mobile {
+		line-height: 2rem;
+		padding: 2rem 0 2rem 0;
+	}
+
+	.products-mobile h3 {
+		font-size: 1.25rem;
+	}
+
+	.products-mobile h5 {
+		font-size: 1rem;
+	}
+
+	.products-mobile h6 {
+		font-size: 0.75rem;
+	}
+
+	/* email */
+
+	.email-mobile {
+		line-height: 1.5rem;
+		padding: 3rem 0 3rem 0;
+	}
+
+	.email-mobile h2 {
+		font-size: 1.75rem;
+	}
+
+	.email-mobile h5 {
+		width: 90%;
+		line-height: 2rem;
+		font-size: 0.85rem;
+	}
+
+	.email-mobile div input {
+		border-style: none;
+		height: 1.75rem;
+		width: 15rem;
+		font-size: 0.75rem;
+	}
+
+	.email-mobile div button {
+		border-style: none;
+		height: 1.75rem;
+		width: 5rem;
+		font-size: 0.75rem;
+	}
+
+	/* footer */
+
+	.footer-mobile {
+		text-align: center;
+		font-size: 0.8rem;
+		line-height: 1.5rem;
+		padding: 3rem 0 2rem 0;
+	}
+
+	/* social media links, change list items from vertical to horizontal */
+
+	.brand-mobile {
+		list-style-type: none;
+		display: inline-block;
+		align-self: center;
+		padding: 1rem;
+		justify-content: space-between;
+	}
+}

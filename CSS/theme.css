@@ -1,0 +1,171 @@
+/* theme.css (Eric Gregor) */
+
+/* header */
+
+header {
+	padding: 2rem;
+}
+
+/* logo and shopping cart */
+
+.logo img {
+	height: 10vh;
+}
+
+.cart img {
+	height: 10vh;
+}
+
+/* top navigation, menu items horizontal */
+
+.nav-inline {
+	list-style-type: none;
+	display: inline-block;
+	padding: 0 2rem 0 2rem;
+	font-size: 2rem;
+}
+
+header nav a {
+	text-decoration: none;
+	color: black;
+	transition: color 1s ease;
+}
+
+header nav a:hover {
+	text-decoration: underline;
+	color: blue;
+}
+
+/* banner */
+
+.banner {
+	height: 80vh;
+	background: url("../images/banner-girl.png") no-repeat center bottom,
+		url("../images/flower-bkgd.jpg") no-repeat center bottom;
+	background-size: contain, cover;
+	opacity: 0.8;
+	text-align: center;
+}
+
+.banner h3 {
+	padding: 1rem;
+	text-shadow: 2px 2px 8px grey;
+}
+
+.banner p {
+	padding: 1rem;
+	text-shadow: 2px 2px 8px grey;
+}
+
+/* call to action (cta) */
+
+.cta {
+	line-height: 3rem;
+	padding: 4rem 0 4rem 0;
+	text-align: center;
+}
+
+.cta h5 {
+	width: 50%;
+	padding: 2rem 0 0 0;
+}
+
+/* products */
+
+.products-hdg {
+	text-align: center;
+	line-height: 3rem;
+	padding: 3rem 0 2rem 0;
+}
+
+.products {
+	text-align: center;
+	line-height: 3rem;
+	padding: 2rem;
+}
+
+/* email */
+
+.email {
+	background: url("../images/wave-bkgd.jpg") no-repeat center bottom;
+	background-size: cover;	padding: 4rem 0 4rem 0;
+	opacity: 0.8;
+	text-align: center;
+}
+
+.email h2 {
+	text-shadow: 2px 2px 8px grey;
+}
+
+.email h5 {
+	width: 55%;
+	line-height: 3rem;
+	padding: 2rem 2rem 3rem 2rem;
+}
+
+.email div input {
+	border-style: none;
+	height: 3rem;
+	width: 25rem;
+}
+
+.email div button {
+	border-style: none;
+	height: 3rem;
+	width: 10rem;
+}
+
+button {
+	transition: background-color 1s ease;
+}
+
+button:hover {
+	background-color: green;
+}
+
+.round-corner {
+	border-radius: 20px;
+}
+
+/* footer */
+
+footer {
+	padding: 4rem 4rem 4rem 2rem;
+	line-height: 2rem;
+}
+
+/* social media links */
+
+.links {
+	line-height: 2.75rem;
+}
+
+.brand-icon {
+	width: 30%;
+}
+
+.brand-name {
+	width: 10rem;
+}
+
+.brand-name a {
+	text-decoration: none;
+}
+
+.brand-name a:hover {
+	text-decoration: underline;
+}
+
+/* background colours */
+
+.bg-color-white {
+	background-color: white;
+}
+
+.bg-color-black {
+	background-color: black;
+}
+
+.bg-color-orange {
+	background-color: orange;
+}

@@ -1,0 +1,29 @@
+/* flex.css (Eric Gregor) */
+
+.flex {
+	display: flex;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.flex-justify-between {
+	justify-content: space-between;	
+}
+
+.flex-justify-around {
+	justify-content: space-around;	
+}
+
+.flex-justify-center {
+	justify-content: center;
+}
+
+.flex-items-center {
+	align-items: center;
+}
+
+.flex-self-center {
+	align-self: center;
+}

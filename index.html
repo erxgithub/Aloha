@@ -1,0 +1,132 @@
+<!-- index.html (Eric Gregor) -->
+
+<!DOCTYPE html>
+<head>
+	<title>Aloha Apparel</title>
+	<link type="text/css" rel="stylesheet" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" href="css/flex.css" />
+	<link type="text/css" rel="stylesheet" href="css/fonts.css" />
+	<link type="text/css" rel="stylesheet" href="css/theme.css" />
+	<link type="text/css" rel="stylesheet" href="css/responsive.css" />
+	<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+	<!-- logo, top navigation, and shopping cart -->
+	<header class="flex flex-justify-between flex-items-center header-mobile">
+		<div class="logo logo-mobile">
+			<img src="images/aloha-logo.svg" />
+		</div>
+		<nav class="raleway-medium">
+			<ul>
+				<li class="flex-justify-between flex-self-center nav-inline nav-mobile"><a href="">Home</a></li>
+				<li class="flex-justify-between flex-self-center nav-inline nav-mobile"><a href="">Account</a></li>
+				<li class="flex-justify-between flex-self-center nav-inline nav-mobile"><a href="">About</a></li>
+				<li class="flex-justify-between flex-self-center nav-inline nav-mobile"><a href="">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="cart cart-mobile">
+			<img src="images/cart-icon.svg" />
+		</div>
+	</header>
+	<!-- banner -->
+	<section class="banner banner-mobile flex flex-justify-center color-white flex-column">
+		<h3>NEW COLLECTION</h3>
+		<p>Spring/Summer 2016</p>
+	</section>
+	<main>
+		<!-- call to action (cta) -->
+		<section class="cta flex flex-items-center flex-justify-center flex-column cta-mobile">
+			<h2>Hand-Crafted <span class="playfair-bold">Styles</span></h2>
+			<h5>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</h5>
+		</section>
+		<hr>
+		<!-- products -->
+		<section class="products-hdg products-hdg-mobile">
+			<h2>Most-Loved <span class="playfair-bold">Products</span></h2>
+		</section>
+		<section class="flex flex-justify-between products products-mobile flex-col-mobile">
+			<div>
+				<img src="images/stretch-knit-dress.jpg" />
+				<ul>
+					<li><h6>DRESSES</h6></li>
+					<li><h3 class="playfair-regular color-red">Stretch Knit Dress</h3></li>
+					<li><h5>$169.00</h5></li>
+				</ul>
+			</div>
+			<div>
+				<img src="images/cotton-blue-shirt.jpg" />
+				<ul>
+					<li><h6>SHIRTS</h6></li>
+					<li><h3 class="playfair-regular color-red">Cotton Blue Shirt</h3></li>
+					<li><h5>$89.00</h5></li>
+				</ul>
+			</div>
+			<div>
+				<img src="images/checked-stretch-dress.jpg" />
+				<ul>
+					<li><h6>DRESSES</h6></li>
+					<li><h3 class="playfair-regular color-red">Checked Stretch Dress</h3></li>
+					<li><h5>$129.00</h5></li>
+				</ul>
+			</div>
+			<div>
+				<img src="images/blue-hipster-backpack.jpg" />
+				<ul>
+					<li><h6>BAGS</h6></li>
+					<li><h3 class="playfair-regular color-red">Blue Hipster Backpack</h3></li>
+					<li><h5>$69.00</h5></li>
+				</ul>
+			</div>
+		</section>
+		<!-- email -->
+		<section class="email flex flex-justify-around flex-items-center flex-column color-white email-mobile">
+			<h2>Sign-up for <span class="playfair-bold">Updates</span></h2>
+			<h5>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</h5>
+			<div class ="flex round-corner bg-color-white">
+				<input type="text" name="email-address" value="   Your Email" class="color-grey round-corner">
+				<button type="button" class="color-white round-corner bg-color-orange">Subscribe</button>
+			</div>
+		</section>
+	</main>
+	<footer class="flex flex-justify-between color-white bg-color-black flex-col-mobile footer-mobile">
+		<!-- contact information -->
+		<div>
+			<ul class="playfair-regular">
+				<li>&copy 2016 Aloha Apparel Co.</li>
+				<li>Powered by HTML and CSS.</li>
+				<li>&nbsp</li>
+				<li>604-604-6040. <a href="mailto:info@alohaapparel.com" class="color-white">info@alohaapparel.com</a></li>
+				<li>&nbsp</li>				
+			</ul>
+			<ul class="playfair-regular color-grey">
+				<li>1490 W Broadway</li>
+				<li>Vancouver, BC, Canada</li>
+			</ul>
+		</div>
+		<!-- social media links -->
+		<div>
+			<ul class="links raleway-light">
+				<li class="flex brand-mobile">
+					<div class="brand-icon"><a href="http://www.facebook.com" class="color-white"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+					<div class="brand-name hidden-mobile"><a href="http://www.facebook.com" class="color-white">Facebook</a></div>
+				</li>
+				<li class="flex brand-mobile">
+					<div class="brand-icon"><a href="http://www.twitter.com" class="color-white"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+					<div class="brand-name hidden-mobile"><a href="http://www.twitter.com" class="color-white">Twitter</a></div>
+				</li>
+				<li class="flex brand-mobile">
+					<div class="brand-icon"><a href="http://www.instagram.com" class="color-white"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+					<div class="brand-name hidden-mobile"><a href="http://www.instagram.com" class="color-white">Instagram</a></div>
+				</li>
+				<li class="flex brand-mobile">
+					<div class="brand-icon"><a href="http://www.pinterest.com" class="color-white"><i class="fa fa-pinterest" aria-hidden="true"></i></a></div>
+					<div class="brand-name hidden-mobile"><a href="http://www.pinterest.com" class="color-white">Pinterest</a></div>
+				</li>
+				<li class="flex brand-mobile">
+					<div class="brand-icon"><a href="http://plus.google.com" class="color-white"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
+					<div class="brand-name hidden-mobile"><a href="http://plus.google.com" class="color-white">Google+</a></div>
+				</li>
+			</ul>
+		</div>
+	</footer>
+</body>
