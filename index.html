@@ -5,9 +5,9 @@
 	<title>Aloha Apparel</title>
 	<link type="text/css" rel="stylesheet" href="css/reset.css" />
 	<link type="text/css" rel="stylesheet" href="css/flex.css" />
-	<!-- <link type="text/css" rel="stylesheet" href="css/fonts.css" /> -->
-	<!-- <link type="text/css" rel="stylesheet" href="css/theme.css" /> -->
-	<!-- <link type="text/css" rel="stylesheet" href="css/responsive.css" /> -->
+	<link type="text/css" rel="stylesheet" href="css/fonts.css" />
+	<link type="text/css" rel="stylesheet" href="css/theme.css" />
+	<link type="text/css" rel="stylesheet" href="css/responsive.css" />
 	<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 <body>
@@ -24,14 +24,14 @@
 	<!-- top navigation menu -->
 	<nav class="raleway-medium">
 		<ul>
-			<li class="flex-justify-between flex-self-center nav-inline nav-mobile"><a href="">About</a></li>
-			<li class="flex-justify-between flex-self-center nav-inline nav-mobile"><a href="">Shop</a></li>
-			<li class="flex-justify-between flex-self-center nav-inline nav-mobile"><a href="">Featured</a></li>
-			<li class="flex-justify-between flex-self-center nav-inline nav-mobile"><a href="">Updates</a></li>
+			<li class="nav-inline"><a href="" class="color-red">ABOUT</a></li>
+			<li class="nav-inline"><a href="" class="color-red">SHOP</a></li>
+			<li class="nav-inline"><a href="" class="color-red">FEATURED</a></li>
+			<li class="nav-inline"><a href="" class="color-red">UPDATES</a></li>
 		</ul>
 	</nav>
 	<!-- banner -->
-	<section class="banner banner-mobile flex flex-justify-center color-white flex-column">
+	<section class="flex flex-justify-center flex-column banner banner-mobile color-white">
 		<h3>NEW COLLECTION</h3>
 		<p>Spring/Summer 2016</p>
 	</section>
@@ -46,7 +46,7 @@
 		<section class="products-hdg products-hdg-mobile">
 			<h2>Most-Loved <span class="playfair-bold">Products</span></h2>
 		</section>
-		<section class="flex flex-justify-between products products-mobile flex-col-mobile">
+		<section class="flex flex-justify-between products products-mobile">
 			<div>
 				<img src="images/stretch-knit-dress.jpg" />
 				<ul>
@@ -54,6 +54,7 @@
 					<li><h3 class="playfair-regular color-red">Stretch Knit Dress</h3></li>
 					<li><h5>$169.00</h5></li>
 				</ul>
+				<button type="button" class="color-white round-corner bg-color-black" onclick="console.log('Item added to cart')">Add to Cart</button>
 			</div>
 			<div>
 				<img src="images/cotton-blue-shirt.jpg" />

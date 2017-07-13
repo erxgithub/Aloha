@@ -21,18 +21,17 @@ header {
 .nav-inline {
 	list-style-type: none;
 	display: inline-block;
-	padding: 1rem 0.5rem 1rem 2rem;
-	font-size: 0.8rem;
-	text-align: center;
+	padding: 0 2rem 0 2rem;
+	font-size: 2rem;
 }
 
-nav a {
+header nav a {
 	text-decoration: none;
 	color: black;
 	transition: color 1s ease;
 }
 
-nav a:hover {
+header nav a:hover {
 	text-decoration: underline;
 	color: blue;
 }
@@ -49,12 +48,12 @@ nav a:hover {
 }
 
 .banner h3 {
-	padding: 1rem 0 1rem 0;
+	padding: 1rem;
 	text-shadow: 2px 2px 8px grey;
 }
 
 .banner p {
-	padding: 1rem 0 1rem 0;
+	padding: 1rem;
 	text-shadow: 2px 2px 8px grey;
 }
 
@@ -136,11 +135,7 @@ footer {
 }
 
 /* social media links */
-	
-.hidden-mobile {
-	display: none;
-}
-	
+
 .links {
 	line-height: 2.75rem;
 }
