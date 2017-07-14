@@ -19,8 +19,16 @@
 
 	/* logo and shopping cart */
 
+	.logo-mobile {
+		order: 1;
+	}
+	
 	.logo-mobile img {
 		height: 5vh;
+	}
+
+	.nav-mobile {
+		order: 3;
 	}
 
 	.cart-mobile {
@@ -28,6 +36,7 @@
 		width: 2.5rem;
 		background: url("../images/cart-icon.svg") no-repeat center bottom;
 		background-size: cover;
+		order: 2;
 	}
 
 	/* top navigation, change menu items from horizontal to vertical */
