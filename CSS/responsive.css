@@ -23,8 +23,11 @@
 		height: 5vh;
 	}
 
-	.cart-mobile img {
-		height: 5vh;
+	.cart-mobile {
+		height: 2.5rem;
+		width: 2.5rem;
+		background: url("../images/cart-icon.svg") no-repeat center bottom;
+		background-size: cover;
 	}
 
 	/* top navigation, change menu items from horizontal to vertical */
@@ -60,7 +63,7 @@
 	.cta-mobile {
 		line-height: 2rem;
 		justify-content: space-around;
-		padding: 3.5rem 0 2.5rem 0;
+		padding: 3.5rem 0 3.5rem 0;
 	}
 
 	.cta-mobile h2 {
@@ -73,12 +76,71 @@
 		padding: 1.75rem 0 0 0;
 	}
 
+	/* categories */
+
+	.cat-mens-mobile {
+		background: url("../images/mens-category.jpg") no-repeat center bottom;
+		background-size: cover;
+		height: 22vh;
+		width: 100%;
+		opacity: 0.8;
+		margin-bottom: 0.5rem;
+	}
+
+	.cat-trends-mobile {
+		background: url("../images/trends-category.jpg") no-repeat center bottom;
+		background-size: cover;
+		height: 22vh;
+		width: 50%;
+		opacity: 0.8;
+		margin-right: 0.25rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.cat-glasses-mobile {
+		background: url("../images/glasses-category.jpg") no-repeat center bottom;
+		background-size: cover;
+		height: 22vh;
+		width: 50%;
+		opacity: 0.8;
+		margin-left: 0.25rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.cat-sale-mobile {
+		background: url("../images/sale-category.jpg") no-repeat center bottom;
+		background-size: cover;
+		height: 22vh;
+		width: 50%;
+		opacity: 0.8;
+		margin-right: 0.25rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.cat-bags-mobile {
+		background: url("../images/bags-category.jpg") no-repeat center bottom;
+		background-size: cover;
+		height: 22vh;
+		width: 50%;
+		opacity: 0.8;
+		margin-left: 0.25rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.cat-womens-mobile {
+		background: url("../images/womens-category.jpg") no-repeat center bottom;
+		background-size: cover;
+		height: 22vh;
+		width: 100%;
+		opacity: 0.8;
+	}
+
 	/* products */
 
 	.products-hdg-mobile {
 		text-align: center;
 		line-height: 1.5rem;
-		padding: 3rem 0 2rem 0;
+		padding: 3.5rem 0 2rem 0;
 	}
 
 	.products-hdg-mobile h2 {
@@ -87,7 +149,7 @@
 
 	.products-mobile {
 		line-height: 2rem;
-		padding: 2rem 0 5rem 0;
+		padding: 2rem 0 3rem 0;
 	}
 
 	.products-mobile h3 {

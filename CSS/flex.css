@@ -4,6 +4,10 @@
 	display: flex;
 }
 
+.flex-row {
+	flex-direction: row;
+}
+
 .flex-column {
 	flex-direction: column;
 }
@@ -18,6 +22,22 @@
 
 .flex-justify-center {
 	justify-content: center;
+}
+
+.flex-justify-start {
+	justify-content: flex-start;
+}
+
+.flex-justify-end {
+	justify-content: flex-end;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.flex-nowrap {
+	flex-wrap: nowrap;
 }
 
 .flex-items-center {

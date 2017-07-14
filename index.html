@@ -9,15 +9,17 @@
 	<link type="text/css" rel="stylesheet" href="css/theme.css" />
 	<link type="text/css" rel="stylesheet" href="css/responsive.css" />
 	<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
-<body>
+<body">
 	<!-- logo and shopping cart -->
 	<header class="flex flex-justify-between flex-items-center header-mobile">
 		<div class="logo logo-mobile">
 			<img src="images/aloha-logo.svg" />
 		</div>
-		<div class="cart cart-mobile">
-			<img src="images/cart-icon.svg" />
+		<div class="flex flex-justify-end cart cart-mobile">
+			<h4 id="itemCount" class="circle hidden-mobile">0</h4>
+			<!-- <img src="images/cart-icon.svg" /> -->
 		</div>
 	</header>
 	<hr>
@@ -41,7 +43,35 @@
 			<h2>Hand-Crafted <span class="playfair-bold">Styles</span></h2>
 			<h5>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</h5>
 		</section>
-		<hr>
+		<!-- categories -->
+		<section class="flex flex-wrap flex-column color-white">
+			<div class="flex flex-wrap flex-column">
+				<div class="flex flex-items-center flex-justify-center cat-mens-mobile">
+					<h4>MEN'S</h4>
+				</div>
+				<div class="flex">
+					<div class="flex flex-items-center flex-justify-center cat-trends-mobile">
+						<h4>TRENDS</h4>
+					</div>
+					<div class="flex flex-items-center flex-justify-center cat-glasses-mobile">
+						<h4>GLASSES</h4>
+					</div>
+				</div>
+			</div>
+			<div class="flex flex-wrap flex-column">
+				<div class="flex">
+					<div class="flex flex-items-center flex-justify-center cat-sale-mobile">
+						<h4>SALE</h4>
+					</div>
+					<div class="flex flex-items-center flex-justify-center cat-bags-mobile">
+						<h4>BAGS</h4>
+					</div>
+				</div>
+				<div class="flex flex-items-center flex-justify-center cat-womens-mobile">
+					<h4>WOMEN'S</h4>
+				</div>
+			</div>
+		</section>
 		<!-- products -->
 		<section class="products-hdg products-hdg-mobile">
 			<h2>Most-Loved <span class="playfair-bold">Products</span></h2>
@@ -54,7 +84,7 @@
 					<li><h3 class="playfair-regular color-red">Stretch Knit Dress</h3></li>
 					<li><h5>$169.00</h5></li>
 				</ul>
-				<button type="button" class="color-white round-corner bg-color-black" onclick="console.log('Item added to cart')">Add to Cart</button>
+				<button type="button" class="color-white round-corner bg-color-black" onclick="addToCart()">Add to Cart</button>
 			</div>
 			<div>
 				<img src="images/cotton-blue-shirt.jpg" />
