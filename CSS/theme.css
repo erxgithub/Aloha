@@ -1,20 +1,51 @@
 /* theme.css (Eric Gregor) */
 
+.hidden-mobile {
+	display: none;
+}
+
+.flex-col-mobile {
+	flex-direction: column;
+}
+
 /* header */
 
-header {
-	padding: 2rem;
+.header-mobile {
+	padding: 1rem 0.5rem 0 0.5rem;
 }
 
 /* logo and shopping cart */
 
-.logo img {
-	height: 10vh;
+.logo-mobile {
+	order: 1;
 }
 
-/* .cart img {
-	height: 10vh;
-} */
+.logo-mobile img {
+	height: 5vh;
+}
+
+.nav-mobile {
+	order: 3;
+}
+
+.cart-mobile {
+	height: 2.5rem;
+	width: 2.5rem;
+	background: url("../images/cart-icon.svg") no-repeat center bottom;
+	background-size: cover;
+	order: 2;
+}
+
+/* top navigation, change menu items from horizontal to vertical */
+
+.nav-mobile {
+	list-style-type: none;
+	/* display: block; */
+	/*balign-self: center; */
+	padding: 0;
+	/* justify-content: left; */
+	font-size: 1rem;
+}
 
 .circle {
   width: 1rem;
@@ -50,8 +81,8 @@ nav a:hover {
 
 /* banner */
 
-.banner {
-	height: 80vh;
+.banner-mobile {
+	height: 45vh;
 	background: url("../images/banner-girl.png") no-repeat center bottom,
 		url("../images/flower-bkgd.jpg") no-repeat center bottom;
 	background-size: contain, cover;
@@ -59,73 +90,163 @@ nav a:hover {
 	text-align: center;
 }
 
-.banner h3 {
-	padding: 1rem 0 1rem 0;
+.banner-mobile h3 {
+	font-size: 1rem;
+	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 	text-shadow: 2px 2px 8px grey;
 }
 
-.banner p {
-	padding: 1rem 0 1rem 0;
+.banner-mobile p {
+	width: 80%;
+	font-size: 2.25rem;
+	padding: 0.5rem 1rem 0.5rem 2rem;
 	text-shadow: 2px 2px 8px grey;
 }
 
 /* call to action (cta) */
 
-.cta {
-	line-height: 3rem;
-	padding: 4rem 0 4rem 0;
+.cta-mobile {
+	line-height: 2rem;
+	justify-content: space-around;
 	text-align: center;
+	padding: 3.5rem 0 3.5rem 0;
 }
 
-.cta h5 {
+.cta-mobile h2 {
+	font-size: 2rem;
+}
+
+.cta-mobile h5 {
+	width: 90%;
+	font-size: 1rem;
+	padding: 1.75rem 0 0 0;
+}
+
+/* categories */
+
+.cat-mens-mobile {
+	background: url("../images/mens-category.jpg") no-repeat center bottom;
+	background-size: cover;
+	height: 22vh;
+	width: 100%;
+	opacity: 0.8;
+	margin-bottom: 0.5rem;
+}
+
+.cat-trends-mobile {
+	background: url("../images/trends-category.jpg") no-repeat center bottom;
+	background-size: cover;
+	height: 22vh;
 	width: 50%;
-	padding: 2rem 0 0 0;
+	opacity: 0.8;
+	margin-right: 0.25rem;
+	margin-bottom: 0.5rem;
+}
+
+.cat-glasses-mobile {
+	background: url("../images/glasses-category.jpg") no-repeat center bottom;
+	background-size: cover;
+	height: 22vh;
+	width: 50%;
+	opacity: 0.8;
+	margin-left: 0.25rem;
+	margin-bottom: 0.5rem;
+}
+
+.cat-sale-mobile {
+	background: url("../images/sale-category.jpg") no-repeat center bottom;
+	background-size: cover;
+	height: 22vh;
+	width: 50%;
+	opacity: 0.8;
+	margin-right: 0.25rem;
+	margin-bottom: 0.5rem;
+}
+
+.cat-bags-mobile {
+	background: url("../images/bags-category.jpg") no-repeat center bottom;
+	background-size: cover;
+	height: 22vh;
+	width: 50%;
+	opacity: 0.8;
+	margin-left: 0.25rem;
+	margin-bottom: 0.5rem;
+}
+
+.cat-womens-mobile {
+	background: url("../images/womens-category.jpg") no-repeat center bottom;
+	background-size: cover;
+	height: 22vh;
+	width: 100%;
+	opacity: 0.8;
 }
 
 /* products */
 
-.products-hdg {
+.products-hdg-mobile {
 	text-align: center;
-	line-height: 3rem;
-	padding: 3rem 0 2rem 0;
+	line-height: 1.5rem;
+	padding: 3.5rem 0 2rem 0;
 }
 
-.products {
+.products-hdg-mobile h2 {
+	font-size: 2rem;
+}
+
+.products-mobile {
 	text-align: center;
-	line-height: 3rem;
-	padding: 2rem;
+	line-height: 2rem;
+	padding: 2rem 0 3rem 0;
+}
+
+.products-mobile h3 {
+	font-size: 1.25rem;
+}
+
+.products-mobile h5 {
+	font-size: 1rem;
+	padding: 0 0 1rem 0;
+}
+
+.products-mobile h6 {
+	font-size: 0.75rem;
 }
 
 /* email */
 
-.email {
+.email-mobile {
 	background: url("../images/wave-bkgd.jpg") no-repeat center bottom;
 	background-size: cover;
-	padding: 4rem 0 4rem 0;
+	line-height: 1.5rem;
+	padding: 3rem 0 3rem 0;
 	opacity: 0.8;
 	text-align: center;
 }
 
-.email h2 {
+.email-mobile h2 {
+	font-size: 2rem;
 	text-shadow: 2px 2px 8px grey;
 }
 
-.email h5 {
-	width: 55%;
-	line-height: 3rem;
+.email-mobile h5 {
+	width: 95%;
+	line-height: 2rem;
+	font-size: 1rem;
 	padding: 2rem 2rem 3rem 2rem;
 }
 
-.email div input {
+.email-mobile div input {
 	border-style: none;
-	height: 3rem;
-	width: 25rem;
+	height: 2.25rem;
+	width: 14rem;
+	font-size: 1rem;
 }
 
-.email div button {
+.email-mobile div button {
 	border-style: none;
-	height: 3rem;
-	width: 10rem;
+	height: 2.25rem;
+	width: 7rem;
+	font-size: 1rem;
 }
 
 button {
@@ -142,13 +263,24 @@ button:hover {
 
 /* footer */
 
-footer {
-	padding: 4rem 4rem 4rem 2rem;
-	line-height: 2rem;
+.footer-mobile {
+	text-align: center;
+	font-size: 0.9rem;
+	line-height: 1.5rem;
+	padding: 3.5rem 0 2rem 0;
+	margin-top: 0.5rem;
 }
 
-/* social media links */
-	
+/* social media links, change list items from vertical to horizontal */
+
+.brand-mobile {
+	list-style-type: none;
+	display: inline-block;
+	align-self: center;
+	padding: 1rem 0.5rem 1rem 0.5rem;
+	justify-content: space-between;
+}
+
 .hidden-mobile {
 	display: none;
 }

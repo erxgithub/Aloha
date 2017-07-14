@@ -1,85 +1,84 @@
 /* responsive.css (Eric Gregor) */
 
-/* mobile responsive */
+/* tablet responsive */
 
-@media only screen and (max-width: 600px) {
-	.hidden-mobile {
+@media only screen and (min-width: 600px) {
+	.hidden-tablet {
 		display: none;
 	}
 	
-	.flex-col-mobile {
+	.flex-col-tablet {
 		flex-direction: column;
 	}
 
 	/* header */
 
-	.header-mobile {
+	.header-tablet {
 		padding: 1rem 0.5rem 0 0.5rem;
 	}
 
 	/* logo and shopping cart */
 
-	.logo-mobile {
+	.logo-tablet {
 		order: 1;
 	}
-	
-	.logo-mobile img {
+
+	.logo-tablet img {
 		height: 5vh;
 	}
 
-	.nav-mobile {
-		order: 3;
-	}
-
-	.cart-mobile {
+	.cart-tablet {
 		height: 2.5rem;
 		width: 2.5rem;
-		background: url("../images/cart-icon.svg") no-repeat center bottom;
-		background-size: cover;
-		order: 2;
+		order: 3;
 	}
 
 	/* top navigation, change menu items from horizontal to vertical */
 
-	.nav-mobile {
+	.nav-tablet {
 		list-style-type: none;
 		display: block;
 		align-self: left;
 		padding: 0;
 		justify-content: left;
 		font-size: 1rem;
+		order: 2;
 	}
 
 	/* banner */
 
-	.banner-mobile {
+	.banner-tablet {
 		height: 45vh;
+		text-align: center;
 	}
 
-	.banner-mobile h3 {
+	.banner-tablet h3 {
 		font-size: 1rem;
 		padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+		text-shadow: 2px 2px 8px grey;
 	}
 
-	.banner-mobile p {
+	.banner-tablet p {
 		width: 80%;
 		font-size: 2.25rem;
 		padding: 0.5rem 1rem 0.5rem 2rem;
+		text-shadow: 2px 2px 8px grey;
 	}
 
 	/* call to action (cta) */
 
-	.cta-mobile {
+	.cta-tablet {
 		line-height: 2rem;
 		justify-content: space-around;
+		text-align: center;
 		padding: 3.5rem 0 3.5rem 0;
 	}
 
-	.cta-mobile h2 {
+	.cta-tablet h2 {
 		font-size: 2rem;
 	}
 
-	.cta-mobile h5 {
+	.cta-tablet h5 {
 		width: 90%;
 		font-size: 1rem;
 		padding: 1.75rem 0 0 0;
@@ -87,118 +86,113 @@
 
 	/* categories */
 
-	.cat-mens-mobile {
-		background: url("../images/mens-category.jpg") no-repeat center bottom;
-		background-size: cover;
+	.cat-tablet {
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+
+	.cat-row-tablet {
+		width: 50%;
+	}
+
+	.cat-mens-tablet {
 		height: 22vh;
-		width: 100%;
-		opacity: 0.8;
+		width: 50%;
+		margin-right: 0.5rem;
 		margin-bottom: 0.5rem;
 	}
 
-	.cat-trends-mobile {
-		background: url("../images/trends-category.jpg") no-repeat center bottom;
-		background-size: cover;
+	.cat-trends-tablet {
 		height: 22vh;
 		width: 50%;
-		opacity: 0.8;
 		margin-right: 0.25rem;
 		margin-bottom: 0.5rem;
 	}
 
-	.cat-glasses-mobile {
-		background: url("../images/glasses-category.jpg") no-repeat center bottom;
-		background-size: cover;
+	.cat-glasses-tablet {
 		height: 22vh;
 		width: 50%;
-		opacity: 0.8;
 		margin-left: 0.25rem;
 		margin-bottom: 0.5rem;
 	}
 
-	.cat-sale-mobile {
-		background: url("../images/sale-category.jpg") no-repeat center bottom;
-		background-size: cover;
+	.cat-sale-tablet {
 		height: 22vh;
 		width: 50%;
-		opacity: 0.8;
 		margin-right: 0.25rem;
-		margin-bottom: 0.5rem;
 	}
 
-	.cat-bags-mobile {
-		background: url("../images/bags-category.jpg") no-repeat center bottom;
-		background-size: cover;
+	.cat-bags-tablet {
 		height: 22vh;
 		width: 50%;
-		opacity: 0.8;
 		margin-left: 0.25rem;
-		margin-bottom: 0.5rem;
 	}
 
-	.cat-womens-mobile {
-		background: url("../images/womens-category.jpg") no-repeat center bottom;
-		background-size: cover;
+	.cat-womens-tablet {
 		height: 22vh;
-		width: 100%;
-		opacity: 0.8;
+		width: 50%;
+		margin-left: 0.5rem;
 	}
 
 	/* products */
 
-	.products-hdg-mobile {
+	.products-hdg-tablet {
 		text-align: center;
 		line-height: 1.5rem;
 		padding: 3.5rem 0 2rem 0;
 	}
 
-	.products-hdg-mobile h2 {
+	.products-hdg-tablet h2 {
 		font-size: 2rem;
 	}
 
-	.products-mobile {
+	.products-tablet {
+		text-align: center;
 		line-height: 2rem;
 		padding: 2rem 0 3rem 0;
 	}
 
-	.products-mobile h3 {
+	.products-tablet h3 {
 		font-size: 1.25rem;
 	}
 
-	.products-mobile h5 {
+	.products-tablet h5 {
 		font-size: 1rem;
 		padding: 0 0 1rem 0;
 	}
 
-	.products-mobile h6 {
+	.products-tablet h6 {
 		font-size: 0.75rem;
 	}
 
 	/* email */
 
-	.email-mobile {
+	.email-tablet {
 		line-height: 1.5rem;
 		padding: 3rem 0 3rem 0;
+		text-align: center;
 	}
 
-	.email-mobile h2 {
+	.email-tablet h2 {
 		font-size: 2rem;
+		text-shadow: 2px 2px 8px grey;
 	}
 
-	.email-mobile h5 {
+	.email-tablet h5 {
 		width: 95%;
 		line-height: 2rem;
 		font-size: 1rem;
+		padding: 2rem 2rem 3rem 2rem;
 	}
 
-	.email-mobile div input {
+	.email-tablet div input {
 		border-style: none;
 		height: 2.25rem;
 		width: 14rem;
 		font-size: 1rem;
 	}
 
-	.email-mobile div button {
+	.email-tablet div button {
 		border-style: none;
 		height: 2.25rem;
 		width: 7rem;
@@ -207,17 +201,17 @@
 
 	/* footer */
 
-	.footer-mobile {
+	.footer-tablet {
 		text-align: center;
 		font-size: 0.9rem;
 		line-height: 1.5rem;
-		padding: 3rem 0 2rem 0;
+		padding: 3.5rem 0 2rem 0;
 		margin-top: 0.5rem;
 	}
 
 	/* social media links, change list items from vertical to horizontal */
 
-	.brand-mobile {
+	.brand-tablet {
 		list-style-type: none;
 		display: inline-block;
 		align-self: center;

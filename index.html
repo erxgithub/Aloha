@@ -1,205 +1,197 @@
 <!-- index.html (Eric Gregor) -->
 
 <!DOCTYPE html>
-<head>
-	<title>Aloha Apparel</title>
-	<link type="text/css" rel="stylesheet" href="css/reset.css" />
-	<link type="text/css" rel="stylesheet" href="css/flex.css" />
-	<link type="text/css" rel="stylesheet" href="css/fonts.css" />
-	<link type="text/css" rel="stylesheet" href="css/theme.css" />
-	<link type="text/css" rel="stylesheet" href="css/responsive.css" />
-	<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-	<script type="text/javascript" src="js/script.js"></script>
-</head>
-<body">
-	<!-- logo and shopping cart -->
-	<header class="flex flex-wrap flex-justify-between flex-items-center header-mobile">
-		<div class="logo logo-mobile">
-			<img src="images/aloha-logo.svg" />
-		</div>
-		<nav class="flex flex-wrap nav-mobile raleway-medium">
-			<hr>
-			<ul>
-				<li class="nav-inline"><a href="" class="color-red">ABOUT</a></li>
-				<li class="nav-inline"><a href="" class="color-red">SHOP</a></li>
-				<li class="nav-inline"><a href="" class="color-red">FEATURED</a></li>
-				<li class="nav-inline"><a href="" class="color-red">UPDATES</a></li>
-			</ul>
-		</nav>
-		<div class="flex flex-justify-end cart cart-mobile">
-			<h4 id="itemCount" class="circle hidden-mobile">0</h4>
-			<!-- <img src="images/cart-icon.svg" /> -->
-		</div>
-	</header>
-	<!-- top navigation menu -->
-	<!-- <nav class="raleway-medium">
-		<ul>
-			<li class="nav-inline"><a href="" class="color-red">ABOUT</a></li>
-			<li class="nav-inline"><a href="" class="color-red">SHOP</a></li>
-			<li class="nav-inline"><a href="" class="color-red">FEATURED</a></li>
-			<li class="nav-inline"><a href="" class="color-red">UPDATES</a></li>
-		</ul>
-	</nav> -->
-	<!-- banner -->
-	<section class="flex flex-justify-center flex-column banner banner-mobile color-white">
-		<h3>NEW COLLECTION</h3>
-		<p>Spring/Summer 2016</p>
-	</section>
-	<main>
-		<!-- call to action (cta) -->
-		<section class="cta flex flex-items-center flex-justify-center flex-column cta-mobile">
-			<h2>Hand-Crafted <span class="playfair-bold">Styles</span></h2>
-			<h5>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</h5>
+<html>
+	<head>
+		<title>Aloha Apparel</title>
+		<link type="text/css" rel="stylesheet" href="css/reset.css" />
+		<link type="text/css" rel="stylesheet" href="css/flex.css" />
+		<link type="text/css" rel="stylesheet" href="css/fonts.css" />
+		<link type="text/css" rel="stylesheet" href="css/theme.css" />
+		<link type="text/css" rel="stylesheet" href="css/responsive.css" />
+		<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body">
+		<!-- logo, shopping cart, and top navigation menu -->
+		<header class="flex flex-wrap flex-justify-between flex-items-center header-mobile header-tablet">
+			<div class="logo-mobile logo-tablet">
+				<img src="images/aloha-logo.svg" />
+			</div>
+			<nav class="nav-mobile raleway-medium">
+				<hr class="hidden-tablet">
+				<ul>
+					<li class="nav-inline"><a href="" class="color-red">ABOUT</a></li>
+					<li class="nav-inline"><a href="" class="color-red">SHOP</a></li>
+					<li class="nav-inline"><a href="" class="color-red">FEATURED</a></li>
+					<li class="nav-inline"><a href="" class="color-red">UPDATES</a></li>
+				</ul>
+			</nav>
+			<div class="flex flex-justify-end cart-mobile cart-tablet">
+				<h4 id="itemCount" class="circle hidden-mobile hidden-tablet">0</h4>
+			</div>
+		</header>
+		<!-- banner -->
+		<section class="flex flex-justify-center flex-column banner-mobile banner-tablet color-white">
+			<h3>NEW COLLECTION</h3>
+			<p>Spring/Summer 2016</p>
 		</section>
-		<!-- categories -->
-		<section class="flex flex-wrap flex-column color-white">
-			<div class="flex flex-wrap flex-column">
-				<div class="flex flex-items-center flex-justify-center cat-mens-mobile">
-					<h4>MEN'S</h4>
-				</div>
-				<div class="flex">
-					<div class="flex flex-items-center flex-justify-center cat-trends-mobile">
-						<h4>TRENDS</h4>
+		<main>
+			<!-- call to action (cta) -->
+			<section class="flex flex-items-center flex-justify-center flex-column cta-mobile">
+				<h2>Hand-Crafted <span class="playfair-bold">Styles</span></h2>
+				<h5>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</h5>
+			</section>
+			<!-- categories -->
+			<section class="flex flex-wrap flex-column color-white">
+				<div class="flex flex-wrap flex-column cat-tablet">
+					<div class="flex flex-items-center flex-justify-center cat-mens-mobile cat-mens-tablet">
+						<h4>MEN'S</h4>
 					</div>
-					<div class="flex flex-items-center flex-justify-center cat-glasses-mobile">
-						<h4>GLASSES</h4>
+					<div class="flex cat-row-tablet">
+						<div class="flex flex-items-center flex-justify-center cat-trends-mobile cat-trends-tablet">
+							<h4>TRENDS</h4>
+						</div>
+						<div class="flex flex-items-center flex-justify-center cat-glasses-mobile cat-glasses-tablet">
+							<h4>GLASSES</h4>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="flex flex-wrap flex-column">
-				<div class="flex">
-					<div class="flex flex-items-center flex-justify-center cat-sale-mobile">
-						<h4>SALE</h4>
+				<div class="flex flex-wrap flex-column cat-tablet">
+					<div class="flex cat-row-tablet">
+						<div class="flex flex-items-center flex-justify-center cat-sale-mobile cat-sales-tablet">
+							<h4>SALE</h4>
+						</div>
+						<div class="flex flex-items-center flex-justify-center cat-bags-mobile cat-bags-tablet">
+							<h4>BAGS</h4>
+						</div>
 					</div>
-					<div class="flex flex-items-center flex-justify-center cat-bags-mobile">
-						<h4>BAGS</h4>
+					<div class="flex flex-items-center flex-justify-center cat-womens-mobile cat-womens-tablet">
+						<h4>WOMEN'S</h4>
 					</div>
 				</div>
-				<div class="flex flex-items-center flex-justify-center cat-womens-mobile">
-					<h4>WOMEN'S</h4>
+			</section>
+			<!-- products -->
+			<section class="products-hdg products-hdg-mobile">
+				<h2>Most-Loved <span class="playfair-bold">Products</span></h2>
+			</section>
+			<section class="flex flex-justify-between products products-mobile">
+				<div>
+					<img src="images/stretch-knit-dress.jpg" />
+					<ul>
+						<li><h6>DRESSES</h6></li>
+						<li><h3 class="playfair-regular color-red">Stretch Knit Dress</h3></li>
+						<li><h5>$169.00</h5></li>
+					</ul>
+					<button type="button" class="color-white round-corner bg-color-black" onclick="addToCart()">Add to Cart</button>
 				</div>
-			</div>
-		</section>
-		<!-- products -->
-		<section class="products-hdg products-hdg-mobile">
-			<h2>Most-Loved <span class="playfair-bold">Products</span></h2>
-		</section>
-		<section class="flex flex-justify-between products products-mobile">
+				<div>
+					<img src="images/cotton-blue-shirt.jpg" />
+					<ul>
+						<li><h6>SHIRTS</h6></li>
+						<li><h3 class="playfair-regular color-red">Cotton Blue Shirt</h3></li>
+						<li><h5>$89.00</h5></li>
+					</ul>
+				</div>
+				<div>
+					<img src="images/checked-stretch-dress.jpg" />
+					<ul>
+						<li><h6>DRESSES</h6></li>
+						<li><h3 class="playfair-regular color-red">Checked Stretch Dress</h3></li>
+						<li><h5>$129.00</h5></li>
+					</ul>
+				</div>
+				<div>
+					<img src="images/blue-hipster-backpack.jpg" />
+					<ul>
+						<li><h6>BAGS</h6></li>
+						<li><h3 class="playfair-regular color-red">Blue Hipster Backpack</h3></li>
+						<li><h5>$69.00</h5></li>
+					</ul>
+				</div>
+				<div>
+					<img src="images/denim-overall-shorts.jpg" />
+					<ul>
+						<li><h6>DENIM</h6></li>
+						<li><h3 class="playfair-regular color-red">Denim Overall Shorts</h3></li>
+						<li><h5>$69.00</h5></li>
+					</ul>
+				</div>
+				<div>
+					<img src="images/pink-dotted-dress.jpg" />
+					<ul>
+						<li><h6>DRESSES</h6></li>
+						<li><h3 class="playfair-regular color-red">Pink Dotted Dress</h3></li>
+						<li><h5>$69.00</h5></li>
+					</ul>
+				</div>
+				<div>
+					<img src="images/blue-silk-dress.jpg" />
+					<ul>
+						<li><h6>DRESSES</h6></li>
+						<li><h3 class="playfair-regular color-red">Blue Silk Dress</h3></li>
+						<li><h5>$69.00</h5></li>
+					</ul>
+				</div>
+				<div>
+					<img src="images/cotton-yellow-tshirt.jpg" />
+					<ul>
+						<li><h6>SHIRTS</h6></li>
+						<li><h3 class="playfair-regular color-red">Cotton Yellow T-Shirt</h3></li>
+						<li><h5>$69.00</h5></li>
+					</ul>
+				</div>
+			</section>
+			<!-- email -->
+			<section class="flex flex-justify-around flex-items-center flex-column color-white email-mobile">
+				<h2>Sign-up for <span class="playfair-bold">Updates</span></h2>
+				<h5>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</h5>
+				<div class ="flex round-corner bg-color-white">
+					<input type="text" name="email-address" value="   Your Email" class="round-corner color-grey">
+					<button type="button" class="round-corner color-white bg-color-orange">Subscribe</button>
+				</div>
+			</section>
+		</main>
+		<footer class="flex flex-justify-between flex-col-mobile footer-mobile color-white bg-color-black">
+			<!-- contact information -->
 			<div>
-				<img src="images/stretch-knit-dress.jpg" />
-				<ul>
-					<li><h6>DRESSES</h6></li>
-					<li><h3 class="playfair-regular color-red">Stretch Knit Dress</h3></li>
-					<li><h5>$169.00</h5></li>
+				<ul class="playfair-regular">
+					<li>&copy 2016 Aloha Apparel Co.</li>
+					<li>Powered by HTML and CSS.</li>
+					<li>&nbsp</li>
+					<li>604-604-6040. <a href="mailto:info@alohaapparel.com" class="color-white">info@alohaapparel.com</a></li>
+					<li>&nbsp</li>				
 				</ul>
-				<button type="button" class="color-white round-corner bg-color-black" onclick="addToCart()">Add to Cart</button>
+				<ul class="playfair-regular color-grey">
+					<li>1490 W Broadway</li>
+					<li>Vancouver, BC, Canada</li>
+				</ul>
 			</div>
+			<!-- social media links -->
 			<div>
-				<img src="images/cotton-blue-shirt.jpg" />
-				<ul>
-					<li><h6>SHIRTS</h6></li>
-					<li><h3 class="playfair-regular color-red">Cotton Blue Shirt</h3></li>
-					<li><h5>$89.00</h5></li>
+				<ul class="links raleway-light">
+					<li class="flex brand-mobile">
+						<div class="brand-icon"><a href="http://www.facebook.com" class="color-white"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+						<div class="brand-name hidden-mobile"><a href="http://www.facebook.com" class="color-white">Facebook</a></div>
+					</li>
+					<li class="flex brand-mobile">
+						<div class="brand-icon"><a href="http://www.twitter.com" class="color-white"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+						<div class="brand-name hidden-mobile"><a href="http://www.twitter.com" class="color-white">Twitter</a></div>
+					</li>
+					<li class="flex brand-mobile">
+						<div class="brand-icon"><a href="http://www.instagram.com" class="color-white"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+						<div class="brand-name hidden-mobile"><a href="http://www.instagram.com" class="color-white">Instagram</a></div>
+					</li>
+					<li class="flex brand-mobile">
+						<div class="brand-icon"><a href="http://www.pinterest.com" class="color-white"><i class="fa fa-pinterest" aria-hidden="true"></i></a></div>
+						<div class="brand-name hidden-mobile"><a href="http://www.pinterest.com" class="color-white">Pinterest</a></div>
+					</li>
+					<li class="flex brand-mobile">
+						<div class="brand-icon"><a href="http://plus.google.com" class="color-white"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
+						<div class="brand-name hidden-mobile"><a href="http://plus.google.com" class="color-white">Google+</a></div>
+					</li>
 				</ul>
 			</div>
-			<div>
-				<img src="images/checked-stretch-dress.jpg" />
-				<ul>
-					<li><h6>DRESSES</h6></li>
-					<li><h3 class="playfair-regular color-red">Checked Stretch Dress</h3></li>
-					<li><h5>$129.00</h5></li>
-				</ul>
-			</div>
-			<div>
-				<img src="images/blue-hipster-backpack.jpg" />
-				<ul>
-					<li><h6>BAGS</h6></li>
-					<li><h3 class="playfair-regular color-red">Blue Hipster Backpack</h3></li>
-					<li><h5>$69.00</h5></li>
-				</ul>
-			</div>
-			<div>
-				<img src="images/denim-overall-shorts.jpg" />
-				<ul>
-					<li><h6>DENIM</h6></li>
-					<li><h3 class="playfair-regular color-red">Denim Overall Shorts</h3></li>
-					<li><h5>$69.00</h5></li>
-				</ul>
-			</div>
-			<div>
-				<img src="images/pink-dotted-dress.jpg" />
-				<ul>
-					<li><h6>DRESSES</h6></li>
-					<li><h3 class="playfair-regular color-red">Pink Dotted Dress</h3></li>
-					<li><h5>$69.00</h5></li>
-				</ul>
-			</div>
-			<div>
-				<img src="images/blue-silk-dress.jpg" />
-				<ul>
-					<li><h6>DRESSES</h6></li>
-					<li><h3 class="playfair-regular color-red">Blue Silk Dress</h3></li>
-					<li><h5>$69.00</h5></li>
-				</ul>
-			</div>
-			<div>
-				<img src="images/cotton-yellow-tshirt.jpg" />
-				<ul>
-					<li><h6>SHIRTS</h6></li>
-					<li><h3 class="playfair-regular color-red">Cotton Yellow T-Shirt</h3></li>
-					<li><h5>$69.00</h5></li>
-				</ul>
-			</div>
-		</section>
-		<!-- email -->
-		<section class="email flex flex-justify-around flex-items-center flex-column color-white email-mobile">
-			<h2>Sign-up for <span class="playfair-bold">Updates</span></h2>
-			<h5>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</h5>
-			<div class ="flex round-corner bg-color-white">
-				<input type="text" name="email-address" value="   Your Email" class="color-grey round-corner">
-				<button type="button" class="color-white round-corner bg-color-orange">Subscribe</button>
-			</div>
-		</section>
-	</main>
-	<footer class="flex flex-justify-between color-white bg-color-black flex-col-mobile footer-mobile">
-		<!-- contact information -->
-		<div>
-			<ul class="playfair-regular">
-				<li>&copy 2016 Aloha Apparel Co.</li>
-				<li>Powered by HTML and CSS.</li>
-				<li>&nbsp</li>
-				<li>604-604-6040. <a href="mailto:info@alohaapparel.com" class="color-white">info@alohaapparel.com</a></li>
-				<li>&nbsp</li>				
-			</ul>
-			<ul class="playfair-regular color-grey">
-				<li>1490 W Broadway</li>
-				<li>Vancouver, BC, Canada</li>
-			</ul>
-		</div>
-		<!-- social media links -->
-		<div>
-			<ul class="links raleway-light">
-				<li class="flex brand-mobile">
-					<div class="brand-icon"><a href="http://www.facebook.com" class="color-white"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
-					<div class="brand-name hidden-mobile"><a href="http://www.facebook.com" class="color-white">Facebook</a></div>
-				</li>
-				<li class="flex brand-mobile">
-					<div class="brand-icon"><a href="http://www.twitter.com" class="color-white"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
-					<div class="brand-name hidden-mobile"><a href="http://www.twitter.com" class="color-white">Twitter</a></div>
-				</li>
-				<li class="flex brand-mobile">
-					<div class="brand-icon"><a href="http://www.instagram.com" class="color-white"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
-					<div class="brand-name hidden-mobile"><a href="http://www.instagram.com" class="color-white">Instagram</a></div>
-				</li>
-				<li class="flex brand-mobile">
-					<div class="brand-icon"><a href="http://www.pinterest.com" class="color-white"><i class="fa fa-pinterest" aria-hidden="true"></i></a></div>
-					<div class="brand-name hidden-mobile"><a href="http://www.pinterest.com" class="color-white">Pinterest</a></div>
-				</li>
-				<li class="flex brand-mobile">
-					<div class="brand-icon"><a href="http://plus.google.com" class="color-white"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
-					<div class="brand-name hidden-mobile"><a href="http://plus.google.com" class="color-white">Google+</a></div>
-				</li>
-			</ul>
-		</div>
-	</footer>
-</body>
+		</footer>
+	</body>
+</html>

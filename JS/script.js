@@ -1,3 +1,5 @@
+// script.js (Eric Gregor)
+
 var cart = {
 	itemCount: 0,
 	addItem: function () {
