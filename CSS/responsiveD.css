@@ -1,0 +1,268 @@
+/* responsiveD.css (Eric Gregor) */
+
+/* desktop responsive */
+
+@media only screen and (min-width: 1240px) {
+	.hidden-desktop {
+		display: none;
+	}
+	
+	.unhidden-desktop {
+		display: inline;
+	}
+	
+	.flex-row-desktop {
+		flex-direction: row;
+	}
+
+	/* header */
+
+	.header-desktop {
+		padding: 1.25rem 4rem 1.25rem 4rem;
+	}
+
+	/* logo */
+
+	.logo-desktop {
+		order: 1;
+	}
+
+	.logo-desktop img {
+		height: 9vh;
+	}
+
+	/* shopping cart */
+
+	.cart-desktop {
+		height: 5rem;
+		width: 5rem;
+		order: 3;
+	}
+
+	.circle-desktop {
+  		width: 1.75rem;
+  		height: 1.75rem;
+  		border-radius: 50%;
+  		font-size: 18px;
+  		color: white;
+  		line-height: 1.5rem;
+  		text-align: center;
+  		background: red;
+	}
+
+	/* top navigation, menu items horizontal */
+
+	.nav-desktop {
+		list-style-type: none;
+		display: block;
+		align-self: left;
+		padding: 0;
+		justify-content: left;
+		font-size: 1rem;
+		width: auto;
+		order: 2;
+	}
+
+	.nav-inline-desktop {
+		list-style-type: none;
+		display: inline-block;
+		padding: 2rem 1.5rem 0 1.5rem;
+		font-size: 1.25rem;
+		text-align: center;
+	}
+
+	/* banner */
+
+	.banner-desktop {
+		height: 82vh;
+		text-align: center;
+	}
+
+	.banner-desktop h3 {
+		font-size: 1.75rem;
+		padding: 0 0 0.75rem 0;
+		text-shadow: 2px 2px 8px grey;
+	}
+
+	.banner-desktop p {
+		font-size: 5rem;
+		padding: 0.75rem 0 0 0;
+		text-shadow: 2px 2px 8px grey;
+	}
+
+	/* call to action (cta) */
+
+	.cta-desktop {
+		line-height: 3rem;
+		justify-content: space-around;
+		text-align: center;
+		padding: 5rem 0 5rem 0;
+	}
+
+	.cta-desktop h2 {
+		font-size: 3rem;
+	}
+
+	.cta-desktop h5 {
+		width: 50%;
+		font-size: 1.5rem;
+		padding: 3rem 0 0 0;
+	}
+
+	/* categories */
+
+	.cat-desktop {
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+
+	.cat-desktop h4 {
+		font-size: 3rem;
+	}
+
+	.cat-row-desktop {
+		width: 50%;
+	}
+
+	.cat-mens-desktop {
+		height: 47vh;
+		width: 50%;
+		margin-right: 0.7rem;
+		margin-bottom: 0.7rem;
+	}
+
+	.cat-trends-desktop {
+		height: 47vh;
+		width: 50%;
+		margin-right: 0.35rem;
+		margin-bottom: 0.7rem;
+	}
+
+	.cat-glasses-desktop {
+		height: 47vh;
+		width: 50%;
+		margin-left: 0.35rem;
+		margin-bottom: 0.7rem;
+	}
+
+	.cat-sale-desktop {
+		height: 47vh;
+		width: 50%;
+		margin-right: 0.35rem;
+	}
+
+	.cat-bags-desktop {
+		height: 47vh;
+		width: 50%;
+		margin-left: 0.35rem;
+	}
+
+	.cat-womens-desktop {
+		height: 47vh;
+		width: 50%;
+		margin-left: 0.7rem;
+	}
+
+	/* products */
+
+	.products-hdg-desktop {
+		text-align: center;
+		line-height: 1.5rem;
+		padding: 5.5rem 0 5.5rem 0;
+	}
+
+	.products-hdg-desktop h2 {
+		font-size: 3rem;
+	}
+
+	.products-desktop {
+		text-align: center;
+		line-height: 4rem;
+		padding: 3rem 3rem 5rem 3rem;
+	}
+
+	.products-desktop h3 {
+		font-size: 2rem;
+		line-height: 2.25rem;
+	}
+
+	.products-desktop h5 {
+		font-size: 1.25rem;
+		padding: 0 0 2rem 0;
+	}
+
+	.products-desktop h6 {
+		font-size: 1rem;
+	}
+
+	.products-desktop button {
+		font-size: 1.1rem;
+		padding: 0.5rem 1rem 0.5rem 1rem;
+	}
+
+	/* email */
+
+	.email-desktop {
+		line-height: 1.5rem;
+		padding: 4rem 0 5rem 0;
+		text-align: center;
+	}
+
+	.email-desktop h2 {
+		font-size: 3rem;
+		text-shadow: 2px 2px 8px grey;
+		padding: 2rem 0 1rem 0;
+	}
+
+	.email-desktop h5 {
+		width: 55%;
+		line-height: 3rem;
+		font-size: 1.5rem;
+		padding: 2rem 2rem 2.5rem 2rem;
+	}
+
+	.email-desktop div input {
+		border-style: none;
+		height: 3.75rem;
+		width: 26rem;
+		font-size: 1.25rem;
+	}
+
+	.email-desktop div button {
+		border-style: none;
+		height: 3.25rem;
+		width: 10rem;
+		font-size: 1.25rem;
+		position: relative;
+		top: 0.3rem;
+		right: 0.3rem;
+	}
+
+	.round-corner-desktop {
+		border-radius: 50px;
+	}
+
+	/* footer */
+
+	.footer-desktop {
+		text-align: left;
+		font-size: 1.25rem;
+		line-height: 2rem;
+		padding: 5rem 6rem 4rem 3rem;
+		margin-top: 0.5rem;
+	}
+
+	/* social media links, list items vertical */
+
+	.links-desktop {
+		line-height: 3rem;
+	}
+
+	.brand-desktop {
+		list-style-type: none;
+		display: flex;
+		align-self: center;
+		padding: 0;
+		justify-content: space-between;
+	}
+}

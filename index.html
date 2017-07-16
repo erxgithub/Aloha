@@ -7,8 +7,9 @@
 		<link type="text/css" rel="stylesheet" href="css/reset.css" />
 		<link type="text/css" rel="stylesheet" href="css/flex.css" />
 		<link type="text/css" rel="stylesheet" href="css/fonts.css" />
-		<link type="text/css" rel="stylesheet" href="css/theme.css" />
-		<link type="text/css" rel="stylesheet" href="css/responsive.css" />
+		<link type="text/css" rel="stylesheet" href="css/theme.css" /> <!-- mobile -->
+		<link type="text/css" rel="stylesheet" href="css/responsiveT.css" /> <!-- tablet -->
+		<link type="text/css" rel="stylesheet" href="css/responsiveD.css" /> <!-- desktop -->
 		<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 		<script type="text/javascript" src="js/script.js"></script>
 	</head>
@@ -21,18 +22,18 @@
 			<nav class="nav-mobile nav-tablet nav-desktop raleway-medium">
 				<hr class="hidden-tablet hidden-desktop">
 				<ul>
-					<li class="nav-inline-mobile nav-inline-tablet nav-inline-desktop"><a href="" class="color-red">ABOUT</a></li>
-					<li class="nav-inline-mobile nav-inline-tablet nav-inline-desktop"><a href="" class="color-red">SHOP</a></li>
-					<li class="nav-inline-mobile nav-inline-tablet nav-inline-desktop"><a href="" class="color-red">FEATURED</a></li>
-					<li class="nav-inline-mobile nav-inline-tablet nav-inline-desktop"><a href="" class="color-red">UPDATES</a></li>
+					<li class="flex nav-inline-mobile nav-inline-tablet nav-inline-desktop"><a href="" class="color-red">ABOUT</a></li>
+					<li class="flex nav-inline-mobile nav-inline-tablet nav-inline-desktop"><a href="" class="color-red">SHOP</a></li>
+					<li class="flex nav-inline-mobile nav-inline-tablet nav-inline-desktop"><a href="" class="color-red">FEATURED</a></li>
+					<li class="flex nav-inline-mobile nav-inline-tablet nav-inline-desktop"><a href="" class="color-red">UPDATES</a></li>
 				</ul>
 			</nav>
 			<div class="flex flex-justify-end cart-mobile cart-tablet cart-desktop">
-				<h4 id="itemCount" class="circle hidden-mobile hidden-tablet hidden-desktop">0</h4>
+				<h4 id="itemCount" class="circle-mobile circle-tablet circle-desktop hidden-mobile hidden-tablet hidden-desktop">0</h4>
 			</div>
 		</header>
 		<!-- banner -->
-		<section class="flex flex-justify-center flex-column banner-mobile banner-tablet banner-desktop color-white">
+		<section class="flex flex-justify-center flex-column flex-wrap banner-mobile banner-tablet banner-desktop color-white">
 			<h3>NEW COLLECTION</h3>
 			<p>Spring/Summer 2016</p>
 		</section>
@@ -48,7 +49,7 @@
 					<div class="flex flex-items-center flex-justify-center cat-mens-mobile cat-mens-tablet cat-mens-desktop">
 						<h4>MEN'S</h4>
 					</div>
-					<div class="flex cat-row-tablet">
+					<div class="flex cat-row-tablet cat-row-desktop">
 						<div class="flex flex-items-center flex-justify-center cat-trends-mobile cat-trends-tablet cat-trends-desktop">
 							<h4>TRENDS</h4>
 						</div>
@@ -83,7 +84,8 @@
 						<li><h3 class="playfair-regular color-red">Stretch Knit Dress</h3></li>
 						<li><h5>$169.00</h5></li>
 					</ul>
-					<button type="button" class="color-white round-corner-mobile bg-color-black" onclick="addToCart()">Add to Cart</button>
+					<!-- <button type="button" class="color-white round-corner-mobile bg-color-black" onclick="addToCart()">Add to Cart</button> -->
+					<button id="button1" type="button" class="color-white round-corner-mobile bg-color-black">Add to Cart</button>
 				</div>
 				<div>
 					<img src="images/cotton-blue-shirt.jpg" />
@@ -92,6 +94,7 @@
 						<li><h3 class="playfair-regular color-red">Cotton Blue Shirt</h3></li>
 						<li><h5>$89.00</h5></li>
 					</ul>
+					<button id="button2" type="button" class="color-white round-corner-mobile bg-color-black">Add to Cart</button>
 				</div>
 				<div>
 					<img src="images/checked-stretch-dress.jpg" />
@@ -100,6 +103,7 @@
 						<li><h3 class="playfair-regular color-red">Checked Stretch Dress</h3></li>
 						<li><h5>$129.00</h5></li>
 					</ul>
+					<button id="button3" type="button" class="color-white round-corner-mobile bg-color-black">Add to Cart</button>
 				</div>
 				<div>
 					<img src="images/blue-hipster-backpack.jpg" />
@@ -108,6 +112,7 @@
 						<li><h3 class="playfair-regular color-red">Blue Hipster Backpack</h3></li>
 						<li><h5>$69.00</h5></li>
 					</ul>
+					<button id="button4" type="button" class="color-white round-corner-mobile bg-color-black">Add to Cart</button>
 				</div>
 				<div>
 					<img src="images/denim-overall-shorts.jpg" />
@@ -116,6 +121,7 @@
 						<li><h3 class="playfair-regular color-red">Denim Overall Shorts</h3></li>
 						<li><h5>$69.00</h5></li>
 					</ul>
+					<button id="button5" type="button" class="color-white round-corner-mobile bg-color-black">Add to Cart</button>
 				</div>
 				<div>
 					<img src="images/pink-dotted-dress.jpg" />
@@ -124,6 +130,7 @@
 						<li><h3 class="playfair-regular color-red">Pink Dotted Dress</h3></li>
 						<li><h5>$69.00</h5></li>
 					</ul>
+					<button id="button6" type="button" class="color-white round-corner-mobile bg-color-black">Add to Cart</button>
 				</div>
 				<div>
 					<img src="images/blue-silk-dress.jpg" />
@@ -132,6 +139,7 @@
 						<li><h3 class="playfair-regular color-red">Blue Silk Dress</h3></li>
 						<li><h5>$69.00</h5></li>
 					</ul>
+					<button id="button7" type="button" class="color-white round-corner-mobile bg-color-black">Add to Cart</button>
 				</div>
 				<div>
 					<img src="images/cotton-yellow-tshirt.jpg" />
@@ -140,6 +148,7 @@
 						<li><h3 class="playfair-regular color-red">Cotton Yellow T-Shirt</h3></li>
 						<li><h5>$69.00</h5></li>
 					</ul>
+					<button id="button8" type="button" class="color-white round-corner-mobile bg-color-black">Add to Cart</button>
 				</div>
 			</section>
 			<!-- email -->
