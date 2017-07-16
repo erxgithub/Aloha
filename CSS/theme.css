@@ -14,7 +14,7 @@
 	padding: 1rem 0.5rem 0 0.5rem;
 }
 
-/* logo and shopping cart */
+/* logo */
 
 .logo-mobile {
 	order: 1;
@@ -24,9 +24,7 @@
 	height: 5vh;
 }
 
-.nav-mobile {
-	order: 3;
-}
+/* shopping cart */
 
 .cart-mobile {
 	height: 2.5rem;
@@ -34,17 +32,6 @@
 	background: url("../images/cart-icon.svg") no-repeat center bottom;
 	background-size: cover;
 	order: 2;
-}
-
-/* top navigation, change menu items from horizontal to vertical */
-
-.nav-mobile {
-	list-style-type: none;
-	/* display: block; */
-	/*balign-self: center; */
-	padding: 0;
-	/* justify-content: left; */
-	font-size: 1rem;
 }
 
 .circle {
@@ -60,7 +47,14 @@
 
 /* top navigation, menu items horizontal */
 
-.nav-inline {
+.nav-mobile {
+	list-style-type: none;
+	padding: 0;
+	font-size: 1rem;
+	order: 3;
+}
+
+.nav-inline-mobile {
 	list-style-type: none;
 	display: inline-block;
 	padding: 0.5rem 1.3rem 0.75rem 1.3rem;
@@ -92,14 +86,14 @@ nav a:hover {
 
 .banner-mobile h3 {
 	font-size: 1rem;
-	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+	padding: 0.5rem;
 	text-shadow: 2px 2px 8px grey;
 }
 
 .banner-mobile p {
 	width: 80%;
 	font-size: 2.25rem;
-	padding: 0.5rem 1rem 0.5rem 2rem;
+	padding: 0.5rem 1rem 0.5rem 1rem;
 	text-shadow: 2px 2px 8px grey;
 }
 
@@ -212,6 +206,10 @@ nav a:hover {
 	font-size: 0.75rem;
 }
 
+.products-mobile button {
+	font-size: 0.8rem;
+}
+
 /* email */
 
 .email-mobile {
@@ -244,9 +242,12 @@ nav a:hover {
 
 .email-mobile div button {
 	border-style: none;
-	height: 2.25rem;
-	width: 7rem;
-	font-size: 1rem;
+	height: 2rem;
+	width: 6.5rem;
+	font-size: 0.9rem;
+	position: relative;
+	top: 0.2rem;
+	right: 0.2rem;
 }
 
 button {
@@ -257,7 +258,7 @@ button:hover {
 	background-color: green;
 }
 
-.round-corner {
+.round-corner-mobile {
 	border-radius: 20px;
 }
 
@@ -272,6 +273,10 @@ button:hover {
 }
 
 /* social media links, change list items from vertical to horizontal */
+	
+.links-mobile {
+	line-height: 2.75rem;
+}
 
 .brand-mobile {
 	list-style-type: none;
@@ -279,14 +284,6 @@ button:hover {
 	align-self: center;
 	padding: 1rem 0.5rem 1rem 0.5rem;
 	justify-content: space-between;
-}
-
-.hidden-mobile {
-	display: none;
-}
-	
-.links {
-	line-height: 2.75rem;
 }
 
 .brand-icon {
