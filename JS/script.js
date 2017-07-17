@@ -15,40 +15,15 @@ var cart = {
 	}
 };
 
-var addToCart = function() {
-	cart.addItem();
-};
-
 window.onload = function () {
-	document.getElementById("button1").onclick = function() {
-		addToCart();
-	};
-	
-	document.getElementById("button2").onclick = function() {
-		addToCart();
-	};
-	
-	document.getElementById("button3").onclick = function() {
-		addToCart();
-	};
-	
-	document.getElementById("button4").onclick = function() {
-		addToCart();
-	};
-	
-	document.getElementById("button5").onclick = function() {
-		addToCart();
-	};
-	
-	document.getElementById("button6").onclick = function() {
-		addToCart();
-	};
-	
-	document.getElementById("button7").onclick = function() {
-		addToCart();
-	};
-	
-	document.getElementById("button8").onclick = function() {
-		addToCart();
-	};
+    if (window.jQuery) { 
+    	console.log("jQuery loaded")
+    }
+    else {
+    	console.log("jQuery not loaded")
+    }
+
+	$(".add-button").click(function() {
+		cart.addItem();
+	});
 }

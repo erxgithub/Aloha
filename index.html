@@ -11,7 +11,6 @@
 		<link type="text/css" rel="stylesheet" href="css/responsiveT.css" /> <!-- tablet -->
 		<link type="text/css" rel="stylesheet" href="css/responsiveD.css" /> <!-- desktop -->
 		<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-		<script type="text/javascript" src="js/script.js"></script>
 	</head>
 	<body>
 		<!-- logo, shopping cart, and top navigation menu -->
@@ -84,8 +83,7 @@
 						<li><h3 class="playfair-regular color-red">Stretch Knit Dress</h3></li>
 						<li><h5>$169.00</h5></li>
 					</ul>
-					<!-- <button type="button" class="color-white round-corner-mobile bg-color-black" onclick="addToCart()">Add to Cart</button> -->
-					<button id="button1" type="button" class="color-white round-corner-mobile bg-color-black">Add to Cart</button>
+					<button type="button" class="add-button color-white round-corner-mobile bg-color-black">Add to Cart</button>
 				</div>
 				<div>
 					<img src="images/cotton-blue-shirt.jpg" />
@@ -94,7 +92,7 @@
 						<li><h3 class="playfair-regular color-red">Cotton Blue Shirt</h3></li>
 						<li><h5>$89.00</h5></li>
 					</ul>
-					<button id="button2" type="button" class="color-white round-corner-mobile bg-color-black">Add to Cart</button>
+					<button type="button" class="add-button color-white round-corner-mobile bg-color-black">Add to Cart</button>
 				</div>
 				<div>
 					<img src="images/checked-stretch-dress.jpg" />
@@ -103,7 +101,7 @@
 						<li><h3 class="playfair-regular color-red">Checked Stretch Dress</h3></li>
 						<li><h5>$129.00</h5></li>
 					</ul>
-					<button id="button3" type="button" class="color-white round-corner-mobile bg-color-black">Add to Cart</button>
+					<button type="button" class="add-button color-white round-corner-mobile bg-color-black">Add to Cart</button>
 				</div>
 				<div>
 					<img src="images/blue-hipster-backpack.jpg" />
@@ -112,7 +110,7 @@
 						<li><h3 class="playfair-regular color-red">Blue Hipster Backpack</h3></li>
 						<li><h5>$69.00</h5></li>
 					</ul>
-					<button id="button4" type="button" class="color-white round-corner-mobile bg-color-black">Add to Cart</button>
+					<button type="button" class="add-button color-white round-corner-mobile bg-color-black">Add to Cart</button>
 				</div>
 				<div>
 					<img src="images/denim-overall-shorts.jpg" />
@@ -121,7 +119,7 @@
 						<li><h3 class="playfair-regular color-red">Denim Overall Shorts</h3></li>
 						<li><h5>$69.00</h5></li>
 					</ul>
-					<button id="button5" type="button" class="color-white round-corner-mobile bg-color-black">Add to Cart</button>
+					<button type="button" class="add-button color-white round-corner-mobile bg-color-black">Add to Cart</button>
 				</div>
 				<div>
 					<img src="images/pink-dotted-dress.jpg" />
@@ -130,7 +128,7 @@
 						<li><h3 class="playfair-regular color-red">Pink Dotted Dress</h3></li>
 						<li><h5>$69.00</h5></li>
 					</ul>
-					<button id="button6" type="button" class="color-white round-corner-mobile bg-color-black">Add to Cart</button>
+					<button type="button" class="add-button color-white round-corner-mobile bg-color-black">Add to Cart</button>
 				</div>
 				<div>
 					<img src="images/blue-silk-dress.jpg" />
@@ -139,7 +137,7 @@
 						<li><h3 class="playfair-regular color-red">Blue Silk Dress</h3></li>
 						<li><h5>$69.00</h5></li>
 					</ul>
-					<button id="button7" type="button" class="color-white round-corner-mobile bg-color-black">Add to Cart</button>
+					<button type="button" class="add-button color-white round-corner-mobile bg-color-black">Add to Cart</button>
 				</div>
 				<div>
 					<img src="images/cotton-yellow-tshirt.jpg" />
@@ -148,7 +146,7 @@
 						<li><h3 class="playfair-regular color-red">Cotton Yellow T-Shirt</h3></li>
 						<li><h5>$69.00</h5></li>
 					</ul>
-					<button id="button8" type="button" class="color-white round-corner-mobile bg-color-black">Add to Cart</button>
+					<button type="button" class="add-button color-white round-corner-mobile bg-color-black">Add to Cart</button>
 				</div>
 			</section>
 			<!-- email -->
@@ -161,46 +159,49 @@
 				</div>
 			</section>
 		</main>
-		<footer class="flex flex-justify-between flex-col-mobile footer-mobile flex-row-tablet footer-tablet flex-row-desktop footer-desktop color-white bg-color-black">
-			<!-- contact information -->
-			<div>
-				<ul class="playfair-regular">
-					<li>&copy 2016 Aloha Apparel Co.</li>
-					<li>Powered by HTML and CSS.</li>
-					<li>&nbsp</li>
-					<li>604-604-6040. <a href="mailto:info@alohaapparel.com" class="color-white">info@alohaapparel.com</a></li>
-					<li>&nbsp</li>				
-				</ul>
-				<ul class="playfair-regular color-grey">
-					<li>1490 W Broadway</li>
-					<li>Vancouver, BC, Canada</li>
-				</ul>
-			</div>
-			<!-- social media links -->
-			<div>
-				<ul class="links-mobile links-tablet links-desktop raleway-light">
-					<li class="flex brand-mobile brand-tablet brand-desktop">
-						<div class="brand-icon"><a href="http://www.facebook.com" class="color-white"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
-						<div class="brand-name hidden-mobile unhidden-tablet unhidden-desktop"><a href="http://www.facebook.com" class="color-white">Facebook</a></div>
-					</li>
-					<li class="flex brand-mobile brand-tablet brand-desktop">
-						<div class="brand-icon"><a href="http://www.twitter.com" class="color-white"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
-						<div class="brand-name hidden-mobile unhidden-tablet unhidden-desktop"><a href="http://www.twitter.com" class="color-white">Twitter</a></div>
-					</li>
-					<li class="flex brand-mobile brand-tablet brand-desktop">
-						<div class="brand-icon"><a href="http://www.instagram.com" class="color-white"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
-						<div class="brand-name hidden-mobile unhidden-tablet unhidden-desktop"><a href="http://www.instagram.com" class="color-white">Instagram</a></div>
-					</li>
-					<li class="flex brand-mobile brand-tablet brand-desktop">
-						<div class="brand-icon"><a href="http://www.pinterest.com" class="color-white"><i class="fa fa-pinterest" aria-hidden="true"></i></a></div>
-						<div class="brand-name hidden-mobile unhidden-tablet unhidden-desktop"><a href="http://www.pinterest.com" class="color-white">Pinterest</a></div>
-					</li>
-					<li class="flex brand-mobile brand-tablet brand-desktop">
-						<div class="brand-icon"><a href="http://plus.google.com" class="color-white"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
-						<div class="brand-name hidden-mobile unhidden-tablet unhidden-desktop"><a href="http://plus.google.com" class="color-white">Google+</a></div>
-					</li>
-				</ul>
-			</div>
-		</footer>
 	</body>
+	<footer class="flex flex-justify-between flex-col-mobile footer-mobile flex-row-tablet footer-tablet flex-row-desktop footer-desktop color-white bg-color-black">
+		<!-- contact information -->
+		<div>
+			<ul class="playfair-regular">
+				<li>&copy 2016 Aloha Apparel Co.</li>
+				<li>Powered by HTML and CSS.</li>
+				<li>&nbsp</li>
+				<li>604-604-6040. <a href="mailto:info@alohaapparel.com" class="color-white">info@alohaapparel.com</a></li>
+				<li>&nbsp</li>				
+			</ul>
+			<ul class="playfair-regular color-grey">
+				<li>1490 W Broadway</li>
+				<li>Vancouver, BC, Canada</li>
+			</ul>
+		</div>
+		<!-- social media links -->
+		<div>
+			<ul class="links-mobile links-tablet links-desktop raleway-light">
+				<li class="flex brand-mobile brand-tablet brand-desktop">
+					<div class="brand-icon"><a href="http://www.facebook.com" class="color-white"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+					<div class="brand-name hidden-mobile unhidden-tablet unhidden-desktop"><a href="http://www.facebook.com" class="color-white">Facebook</a></div>
+				</li>
+				<li class="flex brand-mobile brand-tablet brand-desktop">
+					<div class="brand-icon"><a href="http://www.twitter.com" class="color-white"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+					<div class="brand-name hidden-mobile unhidden-tablet unhidden-desktop"><a href="http://www.twitter.com" class="color-white">Twitter</a></div>
+				</li>
+				<li class="flex brand-mobile brand-tablet brand-desktop">
+					<div class="brand-icon"><a href="http://www.instagram.com" class="color-white"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+					<div class="brand-name hidden-mobile unhidden-tablet unhidden-desktop"><a href="http://www.instagram.com" class="color-white">Instagram</a></div>
+				</li>
+				<li class="flex brand-mobile brand-tablet brand-desktop">
+					<div class="brand-icon"><a href="http://www.pinterest.com" class="color-white"><i class="fa fa-pinterest" aria-hidden="true"></i></a></div>
+					<div class="brand-name hidden-mobile unhidden-tablet unhidden-desktop"><a href="http://www.pinterest.com" class="color-white">Pinterest</a></div>
+				</li>
+				<li class="flex brand-mobile brand-tablet brand-desktop">
+					<div class="brand-icon"><a href="http://plus.google.com" class="color-white"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
+					<div class="brand-name hidden-mobile unhidden-tablet unhidden-desktop"><a href="http://plus.google.com" class="color-white">Google+</a></div>
+				</li>
+			</ul>
+		</div>
+		<!-- JavaScript and jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</footer>
 </html>
