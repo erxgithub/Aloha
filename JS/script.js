@@ -28,8 +28,13 @@ window.onload = function () {
 	});
 };
 
+var prevMinSlides = 0;
+var prevMaxSlides = 0;
+
 $(document).ready(function() {
-	var minSlides, maxSlides;
+	var minSlides;
+	var maxSlides;
+
     var width = $(window).width();
 
 	if (width < 600) {
@@ -45,15 +50,19 @@ $(document).ready(function() {
     	maxSlides = 4;		
 	}
 
-	$('.bxslider').bxSlider({
+	var slider = $('.bxslider').bxSlider({
         minSlides: minSlides,
         maxSlides: maxSlides,
         slideWidth: 390,
 		slideMargin: 10
     });
 
-/*	$(window).resize(function () {
-		var minSlides, maxSlides;
+	// adjust number of slides for browser window resize
+
+	$(window).resize(function () {
+		var minSlides;
+		var maxSlides;
+
     	var width = $(window).width();
 
 		if (width < 600) {
@@ -68,37 +77,17 @@ $(document).ready(function() {
 	    	minSlides = 4;
 	    	maxSlides = 4;		
 		}
+		
+		if (minSlides != prevMinSlides || maxSlides != prevMaxSlides) {
+			slider.reloadSlider({
+		        minSlides: minSlides,
+	    	    maxSlides: maxSlides,
+	        	slideWidth: 390,
+				slideMargin: 10
+	    	});
 
-		var slider = $('.bxslider').bxSlider();
-
-		//$('.bxslider').bxslider.reloadSlider({
-		slider.reloadSlider({
-	        minSlides: minSlides,
-	        maxSlides: maxSlides,
-	        slideWidth: 390,
-			slideMargin: 10
-	    });
-
-	    console.log("resize");
+	    	prevMinSlides = minSlides;
+	    	prevMaxSlides = maxSlides;
+		}
 	});
-*/
-	//var slider = $('.bxslider').bxSlider();
-	//var widthMatch = matchMedia("only screen and (min-width: 600px) and (max-width: 1239px))");
-    //var widthHandler = function(matchList) {
-    //    if (matchList.matches) {
-    //        slider.reloadSlider({
-    //            minSlides: 1,
-    //            maxSlides: 1,
-    //            slideWidth: 390,
-  	//			slideMargin: 10
-    //        })
-    //    } else {
-    //        slider.reloadSlider({
-    //            minSlides: 4,
-    //            maxSlides: 4,
-    //            slideWidth: 390,
-  	//			slideMargin: 10
-    //        })
-    //    }
-    //};
 });

@@ -178,7 +178,7 @@
 	.products-desktop {
 		text-align: center;
 		line-height: 4rem;
-		padding: 3rem 3rem 5rem 3rem;
+		padding: 3rem 3rem 0 3rem;
 	}
 
 	.products-desktop h3 {
