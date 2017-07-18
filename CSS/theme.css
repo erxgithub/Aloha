@@ -1,5 +1,7 @@
 /* theme.css (Eric Gregor) */
 
+/* mobile */
+
 .hidden-mobile {
 	display: none;
 }
@@ -89,7 +91,7 @@ nav a:hover {
 	height: 45vh;
 	background: url("../images/banner-girl.png") no-repeat center bottom,
 		url("../images/flower-bkgd.jpg") no-repeat center bottom;
-	background-size: contain, cover;
+	background-size: auto 85%, cover;
 	opacity: 0.8;
 	text-align: center;
 }

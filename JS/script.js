@@ -1,7 +1,10 @@
 // script.js (Eric Gregor)
 
+// shopping cart
+
 var cart = {
 	itemCount: 0,
+
 	addItem: function () {
 		var x = document.getElementById("itemCount");
 
@@ -16,78 +19,93 @@ var cart = {
 };
 
 window.onload = function () {
-    if (window.jQuery) { 
-    	console.log("jQuery loaded")
+	// check if jQuery loaded
+
+    if (!window.jQuery) { 
+    	console.log("jQuery not loaded");
     }
-    else {
-    	console.log("jQuery not loaded")
-    }
+
+    // attach 'addItem' function to each 'add to cart' button
 
 	$(".add-button").click(function() {
 		cart.addItem();
 	});
 };
 
-var prevMinSlides = 0;
-var prevMaxSlides = 0;
+// bxSlider
 
-$(document).ready(function() {
-	var minSlides;
-	var maxSlides;
+var sliderSettings = {
+	minSlides: 0,
+	maxSlides: 0,
+    slideWidth: 390,
+	slideMargin: 10,
+	prevMinSlides: 0,
+	prevMaxSlides: 0,
 
-    var width = $(window).width();
-
-	if (width < 600) {
-    	minSlides = 1;
-    	maxSlides = 1;
-	}
-	else if (width < 1240) {
-    	minSlides = 2;
-    	maxSlides = 2;
-	}
-	else {
-    	minSlides = 4;
-    	maxSlides = 4;		
-	}
-
-	var slider = $('.bxslider').bxSlider({
-        minSlides: minSlides,
-        maxSlides: maxSlides,
-        slideWidth: 390,
-		slideMargin: 10
-    });
-
-	// adjust number of slides for browser window resize
-
-	$(window).resize(function () {
+	getSliderWidth: function () {
 		var minSlides;
 		var maxSlides;
+
+    	// determine min and max number of slides to display based on browser window width
 
     	var width = $(window).width();
 
 		if (width < 600) {
-	    	minSlides = 1;
-	    	maxSlides = 1;
+    		minSlides = 1;
+    		maxSlides = 1;
 		}
 		else if (width < 1240) {
-	    	minSlides = 2;
-	    	maxSlides = 2;
+    		minSlides = 2;
+    		maxSlides = 2;
 		}
 		else {
-	    	minSlides = 4;
-	    	maxSlides = 4;		
+    		minSlides = 4;
+    		maxSlides = 4;		
 		}
-		
-		if (minSlides != prevMinSlides || maxSlides != prevMaxSlides) {
-			slider.reloadSlider({
-		        minSlides: minSlides,
-	    	    maxSlides: maxSlides,
-	        	slideWidth: 390,
-				slideMargin: 10
-	    	});
 
-	    	prevMinSlides = minSlides;
-	    	prevMaxSlides = maxSlides;
+		sliderSettings.minSlides = minSlides;
+		sliderSettings.maxSlides = maxSlides;
+	},
+
+	sliderWidthChange: function () {
+		// check for change in number of slides to display
+
+		if (sliderSettings.minSlides != sliderSettings.prevMinSlides || sliderSettings.maxSlides != sliderSettings.prevMaxSlides) {
+	    	sliderSettings.prevMinSlides = sliderSettings.minSlides;
+	    	sliderSettings.prevMaxSlides = sliderSettings.maxSlides;
+
+	    	return true;
+	    }
+	    else {
+	    	return false;
+	    }
+	}
+};
+
+$(document).ready(function() {
+	// initial slider setup for current browser window size
+
+	sliderSettings.getSliderWidth();
+
+	var slider = $('.bxslider').bxSlider({
+        minSlides: sliderSettings.minSlides,
+        maxSlides: sliderSettings.maxSlides,
+        slideWidth: sliderSettings.slideWidth,
+		slideMargin: sliderSettings.slideMargin
+    });
+
+	$(window).resize(function () {
+		// adjust number of slides to display for browser window resize
+
+		sliderSettings.getSliderWidth();
+		
+		if (sliderSettings.sliderWidthChange()) {
+			slider.reloadSlider({
+		        minSlides: sliderSettings.minSlides,
+	    	    maxSlides: sliderSettings.maxSlides,
+        		slideWidth: sliderSettings.slideWidth,
+				slideMargin: sliderSettings.slideMargin
+	    	});
 		}
 	});
 });
